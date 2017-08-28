@@ -1,0 +1,10 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Node modules : chaque deve l'installe en local, on ne le commit pas
+/node_modules
+
+# Nos fichiers compilés par brunch
+# On ne commit pas, parce qu'on a déjà app/
+/public
