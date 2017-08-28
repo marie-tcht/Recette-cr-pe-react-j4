@@ -7,7 +7,7 @@ import 'babel-polyfill';
 /*
  * Local Import
  */
-import hello, { sum, product } from 'src/hello.js';
+import hello, { sum, product } from 'src/hello';
 
 
 /*

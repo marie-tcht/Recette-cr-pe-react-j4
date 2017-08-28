@@ -22,6 +22,8 @@
     "start": "brunch watch --server"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0"
+    "babel-polyfill": "^6.26.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   }
 }
