@@ -11,14 +11,14 @@ import React from 'react';
 
 /*
  * Code
+ * Retourne du JSX
  */
-
-// Retourne du JSX
 const App = () => (
   <h1>Hello World !</h1>
 );
 
-/* const App = () => (
+/* Correspond à ça :
+ * const App = () => (
  *   React.createElement('div', null, 'Hello World !')
  * );
  */
