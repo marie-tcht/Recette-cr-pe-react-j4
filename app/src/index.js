@@ -2,28 +2,19 @@
  * Npm Import
  */
 import 'babel-polyfill';
+import React from 'react';
+import { render } from 'react-dom';
 
 
 /*
  * Local Import
  */
-import hello, { sum, product } from 'src/hello';
+import App from 'src/components/App';
 
 
 /*
  * Code
  */
-// console.log(sum(5, 16));
-// console.info(product(8, 95));
-// console.log(hello);
-
-const label = 'student';
-const user = {
-  firstname: 'Marjo',
-  spe: 'React',
-  label,
-};
-
-// const firstname = user.firstname;
-const { firstname, spe } = user;
-console.log({ hello, sum, product, firstname, spe });
+document.addEventListener('DOMContentLoaded', () => {
+  render(<App />, document.getElementById('root'));
+});

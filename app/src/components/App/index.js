@@ -1,9 +1,7 @@
 /*
  * Npm Import
  */
-import 'babel-polyfill';
 import React from 'react';
-import { render } from 'react-dom';
 
 
 /*
@@ -25,6 +23,8 @@ const App = () => (
  * );
  */
 
-document.addEventListener('DOMContentLoaded', () => {
-  render(<App />, document.getElementById('root'));
-});
+
+/*
+ * Export default
+ */
+export default App;
