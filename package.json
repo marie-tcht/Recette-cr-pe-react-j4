@@ -5,6 +5,22 @@
   "license": "MIT",
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
-    "brunch": "^2.10.10"
+    "babel-brunch": "https://github.com/babel/babel-brunch",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "brunch": "^2.10.10",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.3.0"
+  },
+  "scripts": {
+    "build": "brunch build",
+    "start": "brunch watch --server"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
   }
 }
