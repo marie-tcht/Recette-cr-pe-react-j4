@@ -1,16 +1,16 @@
-/**
+/*
  * Npm Import
  */
 import 'babel-polyfill';
 
 
-/**
+/*
  * Local Import
  */
 import hello, { sum, product } from 'src/hello.js';
 
 
-/**
+/*
  * Code
  */
 // console.log(sum(5, 16));
@@ -26,4 +26,4 @@ const user = {
 
 // const firstname = user.firstname;
 const { firstname, spe } = user;
-console.log({ firstname, spe });
+console.log({ hello, sum, product, firstname, spe });
