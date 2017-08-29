@@ -10,6 +10,7 @@ import PropTypes from 'prop-types';
  */
 import Presentation from 'src/components/Presentation';
 import Ingredients from 'src/components/Ingredients';
+import Instructions from 'src/components/Instructions';
 
 
 /*
@@ -29,7 +30,7 @@ const Recipe = ({ data }) => (
     <Ingredients ingredients={data.ingredients} />
 
     {/* Instructions */}
-    {/* <Instructions /> */}
+    <Instructions instructions={data.instructions} />
   </div>
 );
 Recipe.propTypes = {

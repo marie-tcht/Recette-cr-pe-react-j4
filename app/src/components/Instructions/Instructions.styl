@@ -1,0 +1,30 @@
+$gray = #444
+$instruction-color = #ddd
+
+/*
+ * Classes
+ */
+.instruction
+	position: relative
+	margin: 4em 0
+
+	&::before
+		counter-increment: ingredient
+		content: counter(ingredient)
+		position: absolute
+		top: -.4em
+		left: -.7em
+		font-size: 4em
+		color: $instruction-color
+
+	&-desc
+		color: $gray
+		position: relative
+
+
+/*
+ * IDs
+ */
+#instructions
+	counter-reset: ingredient
+	margin: 6em
