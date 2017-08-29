@@ -17,8 +17,8 @@ import Ingredient from './Ingredient';
  */
 const Ingredients = ({ ingredients }) => (
   <div id="ingredients">
-    {ingredients.map(ingredient => (
-      <Ingredient quantity={ingredient.quantity} desc={ingredient.desc} />
+    {ingredients.map((ingredient, index) => (
+      <Ingredient key={index} {...ingredient} />
     ))}
   </div>
 );
