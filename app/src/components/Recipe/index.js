@@ -13,8 +13,10 @@ import React from 'react';
  * Code
  * Retourne du JSX
  */
-const App = () => (
-  <h1>Hello World !</h1>
+const Recipe = () => (
+  <div id="recipe">
+    Voici ma recette de crêpes gourmandes !
+  </div>
 );
 
 /* Correspond à ça :
@@ -27,4 +29,4 @@ const App = () => (
 /*
  * Export default
  */
-export default App;
+export default Recipe;

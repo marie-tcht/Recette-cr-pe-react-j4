@@ -9,12 +9,12 @@ import { render } from 'react-dom';
 /*
  * Local Import
  */
-import App from 'src/components/App';
+import Recipe from 'src/components/Recipe';
 
 
 /*
  * Code
  */
 document.addEventListener('DOMContentLoaded', () => {
-  render(<App />, document.getElementById('root'));
+  render(<Recipe />, document.getElementById('root'));
 });
