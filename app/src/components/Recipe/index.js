@@ -2,28 +2,35 @@
  * Npm Import
  */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 /*
  * Local Import
  */
+import Presentation from 'src/components/Presentation';
 
 
 /*
  * Code
  * Retourne du JSX
  */
-const Recipe = (props) => (
+const Recipe = ({ data }) => (
   <div id="recipe">
-    Voici ma recette de crêpes gourmandes !
+    {/* Présentation */}
+    <Presentation />
+
+    {/* Ingrédients */}
+    {/* <Ingredients /> */}
+
+    {/* Instructions */}
+    {/* <Instructions /> */}
+
   </div>
 );
-
-/* Correspond à ça :
- * const App = () => (
- *   React.createElement('div', null, 'Hello World !')
- * );
- */
+Recipe.propTypes = {
+  data: PropTypes.object.isRequired,
+};
 
 
 /*

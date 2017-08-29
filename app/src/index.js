@@ -17,7 +17,7 @@ import recetteDeCrepes from './data';
  * Code
  */
 document.addEventListener('DOMContentLoaded', () => {
-  const component = <Recipe recipe={recetteDeCrepes} />;
+  const component = <Recipe data={recetteDeCrepes} />;
   const node = document.getElementById('root');
   render(component, node);
 });
