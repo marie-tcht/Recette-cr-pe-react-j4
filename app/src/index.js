@@ -10,11 +10,14 @@ import { render } from 'react-dom';
  * Local Import
  */
 import Recipe from 'src/components/Recipe';
+import recetteDeCrepes from './data';
 
 
 /*
  * Code
  */
 document.addEventListener('DOMContentLoaded', () => {
-  render(<Recipe />, document.getElementById('root'));
+  const component = <Recipe recipe={recetteDeCrepes} />;
+  const node = document.getElementById('root');
+  render(component, node);
 });

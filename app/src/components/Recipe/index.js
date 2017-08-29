@@ -13,7 +13,7 @@ import React from 'react';
  * Code
  * Retourne du JSX
  */
-const Recipe = () => (
+const Recipe = (props) => (
   <div id="recipe">
     Voici ma recette de crêpes gourmandes !
   </div>
