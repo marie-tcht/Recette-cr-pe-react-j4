@@ -6,14 +6,14 @@ import PropTypes from 'prop-types';
 
 
 /*
- * Local Import
+ * Local import
  */
 import Presentation from 'src/components/Presentation';
+import Ingredients from 'src/components/Ingredients';
 
 
 /*
  * Code
- * Retourne du JSX
  */
 const Recipe = ({ data }) => (
   <div id="recipe">
@@ -26,11 +26,10 @@ const Recipe = ({ data }) => (
     />
 
     {/* Ingrédients */}
-    {/* <Ingredients /> */}
+    <Ingredients ingredients={data.ingredients} />
 
     {/* Instructions */}
     {/* <Instructions /> */}
-
   </div>
 );
 Recipe.propTypes = {

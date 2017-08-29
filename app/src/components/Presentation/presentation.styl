@@ -1,5 +1,32 @@
 /*
- * Présentation
+ * Presentation
  */
 #presentation
-  font-size: 3em
+	position: relative
+
+	&-image
+		width: 100%
+
+	&-content
+		position: absolute
+		bottom: 3em
+		left: 0
+		right: 0
+		color: #fff
+		text-align: center
+		text-shadow: 0 0 12px rgba(#000, .2)
+
+	&-name
+		font-size: 2em
+		text-transform: uppercase
+		margin-bottom: .25em
+
+	&-author
+	&-difficulty
+		display: inline-block
+
+
+	&-difficulty
+		&::before
+			content: "-"
+			margin: 0 1em
